@@ -1,6 +1,10 @@
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import sessionmaker
-from database_setup import Base, Project, Keywords, Users
+# from database_setup import Base, Project, Keywords, Users
+from database_setup import Base
+from database_setup import Project
+from database_setup import Keywords
+from database_setup import Users
 from database_setup import engine
 import sys, os, hashlib
 

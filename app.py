@@ -8,7 +8,7 @@ from flask_login import LoginManager, login_required, login_user, logout_user
 
 app = Flask(__name__)
 app.secret_key = b'_5#yfsdf43g2L"F4Q8rege3]/'
-
+# yfsdf43g2L"
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 login_manager = LoginManager()
@@ -16,7 +16,6 @@ login_manager.init_app(app)
 
 
 @app.route('/', methods=['GET', 'POST'])
-@login_required
 def test():
     return 'pr'
 

@@ -4,8 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
 from flask_login import UserMixin
-
-
+import os
 Base = declarative_base()
 
 
@@ -36,7 +35,6 @@ class Keywords(Base):
     keyword_name = Column(String(250), nullable=False)
 
     project_id = Column(Integer, ForeignKey('Project.id'))
-
 
 
 
